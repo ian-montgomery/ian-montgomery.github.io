@@ -3,7 +3,7 @@ body {
     width:100vw;
     font-family: sans-serif;
     color: black;
-    background-color: #EAE7DC;
+   
 }
 
 a {
@@ -12,21 +12,20 @@ a {
 }
 
 a:hover {
-    background-color: #eed7b9;
+    background-color: #D62D20;
 }
 #header {
     padding: 20px 0 20px 20px;
-    background-color: #123C69;
-    color: #D79922;
-
+    background-color: white;
+    
 }
  #header h1 {
      margin: 0;
      text-decoration: none;
-     color: #D79922;
+     color: #D62D20;
  }
 #menu {
-    background-color: #D79922;
+    background-color: #D62D20;
     color:white;
     width: 100%;
     padding: 5px 10px 5px 10px;
@@ -41,9 +40,14 @@ a:hover {
 }
 
 #menu a:hover {
-    background-color: #d78922;
+    background-color: #d3524e;
 }
 
+#large-header {
+    font-size: 100px;
+    margin: 1px;
+    color:#D62D20;
+}
 .nav {
     margin: 0 1px 0 0;
     padding: 1em 0;
@@ -74,3 +78,50 @@ a:hover {
     border-radius: 50%;
 }
 
+ .boxmodel {
+    margin: 30px 0 0 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+     
+ }
+
+ .boxmodelmargin {
+    background-color: white;
+    padding: 20px 45px 45px 45px;
+    border: 2px dashed gray;
+ }
+
+.boxmodellabel {
+    margin: 0 0 10px 0;
+}
+
+ .boxmodelborder {
+    background-color: #D62D20;
+    padding: 5px 30px 30px 35px;
+    
+    
+ }
+
+ .boxmodelpadding {
+    padding: 20px 45px 45px 45px;
+    background-color: white;
+    
+ }
+
+ .boxmodelcontent {
+    padding: 20px 45px 45px 45px;
+    background-color: white;
+    border: 2px dashed grey;
+    
+}
+
+.highlighted {
+    background-color: #FFA700;
+}
+
+.demodiv {
+    margin: 30px;
+    border: 4px solid #D62D20;
+    padding: 60px;
+}
