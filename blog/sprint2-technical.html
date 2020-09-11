@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>sprint2 technical blog</title>
+    <meta charset="utf-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <a name="top"></a>
+    <div id="header">
+      <a href="../index.html"><h1>a work in progress by ian montgomery</h1></a>
+    </div>
+    <div id="menu">
+          <a href="../index.html">home</a>
+          <a href="../blog/sprint1-cultural.html">cultural blogs</a>
+          <a href="blog/sprint1-technical.html"><strong>technical blogs</strong></a>
+    </div>
+    <div class="nav">
+      <img class="navimage" src="../images/laptop.jpg" alt="picture of kumara">
+      <ul>
+        <li>
+          <a href="../blog/sprint1-technical.html">technical blog 1</a>
+        </li>
+        <li>
+          <a href="sprint2-technical.html"><strong>technical blog 2</strong></a>
+        </li>
+        <li>
+            <a href="#">technical blog 3</a>
+        </li>
+        <li>
+            <a href="#">technical blog 4</a>
+        </li>
+        <li>
+            <a href="#">technical blog 5</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+        <h1>What is the difference between Margin, Border and Padding?</h1>
+        <h2 class="subtitle">An exploration of the box model</h2>
+        <h3>10 September 2020</h3>
+        <br>
+        <h3>What is the css Box Model?</h3>
+        <p>In order to understand the difference between margin, border and padding you should first understand the box model and think of an element on a website as consisting of 4 nested boxes. Margin is the outer box, then border, then padding and finally the content box which holds the meat and potatoes of the element.</p>
+        <div class="boxmodel">
+            <div class="boxmodelmargin">
+                <p class="boxmodellabel">Margin</p>
+                 <div class="boxmodelborder">
+                  <p class="boxmodellabel">Border</p>
+                     <div class="boxmodelpadding">
+                         <p class="boxmodellabel">Padding</p>
+                         <div class="boxmodelcontent">
+                             <p class="boxmodellabel">Content</p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <br>
+       <h3>Content</h2>
+       <p>This is the origin from which you are sizing and spacing this element on the page. Margin, border and padding are styled in relation to the content box. The differences we will explore between margin, border and padding will all be in relation to how those elements interact with the content they are surrounding.</p>
+       <div class="boxmodel">
+           <div class="boxmodelmargin">
+               <p class="boxmodellabel">Margin</p>
+                <div class="boxmodelborder">
+                 <p class="boxmodellabel">Border</p>
+                    <div class="boxmodelpadding">
+                        <p class="boxmodellabel">Padding</p>
+                        <div class="boxmodelcontent highlighted">
+                            <p class="boxmodellabel">Content</p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+       <br>
+       <h3>Padding</h3>
+       <p>This is the amount of space inside the box between the content and the border. Increasing the padding pushes the border away from the content.</p>
+       <div class="boxmodel">
+        <div class="boxmodelmargin">
+            <p class="boxmodellabel">Margin</p>
+             <div class="boxmodelborder">
+              <p class="boxmodellabel">Border</p>
+                 <div class="boxmodelpadding highlighted">
+                     <p class="boxmodellabel">Padding</p>
+                     <div class="boxmodelcontent">
+                         <p class="boxmodellabel">Content</p>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <br>
+    <h3>Border</h3>
+    <p>This is the boundary of you content box. It can visually represent the container that is holding your content within the element and is the component of the element that separates the padding from the margin.</p>
+       <div class="boxmodel">
+        <div class="boxmodelmargin">
+            <p class="boxmodellabel">Margin</p>
+             <div class="boxmodelborder highlighted">
+              <p class="boxmodellabel">Border</p>
+                 <div class="boxmodelpadding">
+                     <p class="boxmodellabel">Padding</p>
+                     <div class="boxmodelcontent">
+                         <p class="boxmodellabel">Content</p>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <br>
+    <h3>Margin</h3>
+    <p>This is the amount of space between the border and other elements on the page. If you have two separate elements containing content, the margin determines how much space is between the borders of the two elements. Unlike the padding, which determines the space between the content and its own border, the margin determines space outside of the border.</p>
+       <div class="boxmodel">
+        <div class="boxmodelmargin highlighted">
+            <p class="boxmodellabel">Margin</p>
+             <div class="boxmodelborder">
+              <p class="boxmodellabel">Border</p>
+                 <div class="boxmodelpadding">
+                     <p class="boxmodellabel">Padding</p>
+                     <div class="boxmodelcontent">
+                         <p class="boxmodellabel">Content</p>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <br>
+    <h3>Demonstration</h3>
+    <p>Below you will see some html and css used to demonstrate the qualities of margin, border and padding.</p>
+    <p>This is the html used for the example.</p>
+    <img src="../images/s2t_html_example.jpg" alt="picture of html code">
+    <p>And this is the css used to achieve the different qalities of margin, border and padding.</p>
+    <img src="../images/s2t_css_example.jpg" alt="picture of css code">
+    <p>As you can see below, there are two elements on the page holding content and demonstrating margin, border and padding.You will notice the space between the two elements and their borders as well as the space between the borders and the content. The margin pushes the elements out away from each other by 30px and the padding pushes the border away from the content by 60px.</p>
+    <div class="demodiv">
+        Extraplanetary descended from astronomers light years Flatland Drake Equation across the centuries. Courage of our questions a mote of dust suspended in a sunbeam decipherment inconspicuous motes of rock and gas bits of moving fluff and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+    </div>
+    <div class="demodiv">
+        Sea of Tranquility the ash of stellar alchemy birth two ghostly white figures in coveralls and helmets are softly dancing finite but unbounded consectetur. Across the centuries tingling of the spine dream of the mind's eye  billions upon billions upon billions upon billions upon billions upon billions upon billions.
+    </div>
+    <a href="#top">back to top</a>
+  </body>
+</html>
